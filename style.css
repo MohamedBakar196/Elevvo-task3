@@ -307,3 +307,41 @@ input:focus {
 .hero-visual svg rect:not(:first-child) {
     fill: rgba(255, 255, 255, 0.95) !important;
 }
+
+/* Navbar: translucent surface, ensure links readable and hamburger visible */
+.navbar {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    padding: .5rem 0;
+}
+
+.navbar .navbar-brand .brand-text {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    color: var(--text);
+    margin-inline: .25rem;
+    transition: color .15s ease, transform .12s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--primary);
+    transform: translateY(-1px);
+}
+
+.navbar .btn-primary {
+    padding: .35rem .6rem;
+    font-size: .9rem;
+}
+
+/* Footer small logo-mark spacing */
+.footer-section .logo-mark.small {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 6px;
+}
