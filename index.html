@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TaskFlow — Modern Task Management</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Favicon (inline SVG data URI) -->
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Crect%20width='24'%20height='24'%20rx='5'%20fill='%23134686'/%3E%3Cpath%20d='M7%2012l3%203%207-7'%20stroke='%23ffffff'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20fill='none'/%3E%3C/svg%3E">
+    <meta name="color-scheme" content="light dark">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="80" tabindex="0">
+
+    <!-- NAVBAR (fixed) -->
+    <header>
+        <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+            aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <!-- inline SVG logo (replaces the plain square) -->
+                    <svg class="logo-mark" width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"
+                        focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="5" fill="var(--primary)" />
+                        <path d="M7 12l3 3 7-7" stroke="var(--accent-contrast)" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                    </svg>
+                    <span class="brand-text">TaskFlow</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
+                    aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navCollapse">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#subscribe">Subscribe</a></li>
+                        <li class="nav-item ms-2">
+                            <a class="btn btn-primary btn-sm d-inline-flex align-items-center" href="#pricing">Get
+                                Started</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="hero" class="hero-section d-flex align-items-center" role="region" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6">
+                        <h1 id="hero-title" class="display-4 fw-bold">TaskFlow — Stay focused, ship faster.</h1>
+                        <p class="lead text-muted">A modern task manager for teams and individuals — prioritize,
+                            collaborate, and deliver with clarity.</p>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <a class="btn btn-primary btn-lg" href="#features">Explore Features</a>
+                            <a class="btn btn-outline-primary btn-lg" href="#pricing">See Pricing</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <!-- Illustration / Mockup (SVG placeholder, lazy) -->
+                        <figure class="hero-visual" aria-hidden="true">
+                            <svg width="420" height="300" viewBox="0 0 840 600" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="img-fluid">
+                                <rect x="20" y="20" width="800" height="560" rx="20" fill="#f6f9ff" stroke="#e6eefc" />
+                                <rect x="60" y="80" width="260" height="36" rx="8" fill="#fff" />
+                                <rect x="60" y="134" width="720" height="36" rx="8" fill="#fff" />
+                                <rect x="60" y="190" width="360" height="28" rx="6" fill="#fff" />
+                                <!-- small cards -->
+                                <rect x="440" y="220" width="320" height="56" rx="10" fill="#fff" />
+                                <rect x="440" y="292" width="320" height="56" rx="10" fill="#fff" />
+                                <rect x="440" y="364" width="320" height="56" rx="10" fill="#fff" />
+                            </svg>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features" class="py-6" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title" class="text-center mb-4">Core Features</h2>
+                <p class="text-center text-muted mb-5">Designed to help your team plan, track and deliver work.</p>
+
+                <div class="features-grid">
+                    <article class="feature-card card" tabindex="0">
+                        <div class="card-body d-flex gap-3 align-items-start">
+                            <div class="feature-icon bg-primary text-white rounded-3">
+                                <i class="bi bi-kanban-fill"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5">Organize Tasks</h3>
+                                <p class="mb-0 text-muted">Create boards, lists and tags to keep everything organized.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feature-card card" tabindex="0">
+                        <div class="card-body d-flex gap-3 align-items-start">
+                            <div class="feature-icon bg-primary text-white rounded-3">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5">Smart Scheduling</h3>
+                                <p class="mb-0 text-muted">Deadlines, reminders and recurring tasks so nothing slips
+                                    through.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feature-card card" tabindex="0">
+                        <div class="card-body d-flex gap-3 align-items-start">
+                            <div class="feature-icon bg-primary text-white rounded-3">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5">Team Collaboration</h3>
+                                <p class="mb-0 text-muted">Assign work, comment, and track progress in real time.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="py-6 bg-contrast" aria-labelledby="testimonials-title">
+            <div class="container">
+                <h2 id="testimonials-title" class="text-center mb-4">What our users say</h2>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <figure class="testimonial-card card p-3 h-100">
+                            <div class="d-flex gap-3 align-items-center">
+                                <img class="avatar rounded-circle" src="https://i.pravatar.cc/64?u=alex"
+                                    alt="Alex Johnson avatar" loading="lazy">
+                                <figcaption>
+                                    <strong>Alex Johnson</strong>
+                                    <div class="text-muted small">Product Manager</div>
+                                </figcaption>
+                            </div>
+                            <blockquote class="mt-3 mb-0">"TaskFlow helped our team reduce meeting time and ship
+                                features faster."</blockquote>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <figure class="testimonial-card card p-3 h-100">
+                            <div class="d-flex gap-3 align-items-center">
+                                <img class="avatar rounded-circle" src="https://i.pravatar.cc/64?u=maria"
+                                    alt="Maria Lee avatar" loading="lazy">
+                                <figcaption>
+                                    <strong>Maria Lee</strong>
+                                    <div class="text-muted small">Freelancer</div>
+                                </figcaption>
+                            </div>
+                            <blockquote class="mt-3 mb-0">"Clean UI and fast workflows — I use it daily for client
+                                work."</blockquote>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <figure class="testimonial-card card p-3 h-100">
+                            <div class="d-flex gap-3 align-items-center">
+                                <img class="avatar rounded-circle" src="https://i.pravatar.cc/64?u=sam"
+                                    alt="Sam Patel avatar" loading="lazy">
+                                <figcaption>
+                                    <strong>Sam Patel</strong>
+                                    <div class="text-muted small">Team Lead</div>
+                                </figcaption>
+                            </div>
+                            <blockquote class="mt-3 mb-0">"Great collaboration features and superb task visibility."
+                            </blockquote>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section id="pricing" class="py-6" aria-labelledby="pricing-title">
+            <div class="container">
+                <h2 id="pricing-title" class="text-center mb-4">Pricing</h2>
+                <p class="text-center text-muted mb-5">Simple, transparent pricing for teams of all sizes.</p>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pricing-card card p-4 text-center h-100">
+                            <h3 class="h5">Free</h3>
+                            <div class="display-6 my-3 fw-bold">$0</div>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li>• Basic task management</li>
+                                <li>• Unlimited personal tasks</li>
+                                <li>• Mobile access</li>
+                            </ul>
+                            <a class="btn btn-outline-primary w-100" href="#" aria-label="Choose Free plan">Choose</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pricing-card card p-4 text-center h-100 featured">
+                            <div class="badge bg-primary text-white mb-2">Most popular</div>
+                            <h3 class="h5">Pro</h3>
+                            <div class="display-6 my-3 fw-bold">$9</div>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li>• All Free features</li>
+                                <li>• Reminders & deadlines</li>
+                                <li>• Priority support</li>
+                            </ul>
+                            <a class="btn btn-primary w-100" href="#" aria-label="Choose Pro plan">Choose</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pricing-card card p-4 text-center h-100">
+                            <h3 class="h5">Team</h3>
+                            <div class="display-6 my-3 fw-bold">$19</div>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li>• All Pro features</li>
+                                <li>• Team collaboration</li>
+                                <li>• Admin controls</li>
+                            </ul>
+                            <a class="btn btn-outline-primary w-100" href="#" aria-label="Choose Team plan">Choose</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUBSCRIBE / CONTACT -->
+        <section id="subscribe" class="py-6 bg-contrast" aria-labelledby="subscribe-title">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6">
+                        <h2 id="subscribe-title">Get early access</h2>
+                        <p class="text-muted">Join our newsletter to get product updates and tips.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form id="subscribe-form" class="subscribe-form d-flex gap-2" novalidate>
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input id="email" name="email" type="email" class="form-control" placeholder="Your email"
+                                required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </form>
+                        <div id="subscribe-msg" class="form-text mt-2" aria-live="polite"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-section py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div class="d-flex align-items-center gap-2">
+                <span class="logo-mark small" aria-hidden="true"></span>
+                <small class="text-muted">© 2025 TaskFlow — All rights reserved</small>
+            </div>
+            <div class="d-flex gap-2">
+                <a class="social-link" href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                <a class="social-link" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a class="social-link" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
